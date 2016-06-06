@@ -136,9 +136,12 @@ We can also transpose the matrix of returns to create a new "horizontal" matrix.
 <br>
 1.dim(transposedData)
 <br>
-2.portfolio = apply(transposedData,2,mean)
+2.
+```{r}
+  portfolio = apply(transposedData,2,mean)
   names(portfolio) <- rownames(StockReturns)
   pnl_plot(portfolio)
+```
 <br>
 <br>
 <hr>
@@ -157,12 +160,15 @@ This is an important step and will get you to think about the overall process on
 <br>
 1. startDate = "2001-01-01"
 <br>
-2. website_used = "yahoo"
+2.
+```{r}
+   website_used = "yahoo"
    mytickers = c("SPY", "AAPL","GOOG","MSFT")
    startDate = "2005-01-01"
    portfolio = apply(StockReturns,1,mean)
    names(portfolio) <- rownames(StockReturns)
    pnl_plot(portfolio)
+```
 <br>
 <br>
 <hr>
