@@ -59,7 +59,8 @@ For more information on downloading finance data from the internet as well as on
 **Your Answers here:**
 <br>
 <br>
-
+https://github.com/joshuaulrich/quantmod
+https://github.com/quandl/quandl-r
 <hr>
 <hr>
 
@@ -89,7 +90,13 @@ pnl_plot(SPY)
 <br>
 <br>
 <br>
-
+1. source("dataSet1.R")
+2. Cumulative returns of Apple = 574.8%
+   Average daily return of Apple = 0.148%
+   Standard deviation of daily returns of Apple = 2.425%
+3. Cumulative returns of Yahoo = 275.1%
+   Average daily return of Yahoo = 0.071%
+   Standard deviation of daily returns of Yahoo = 3.064%
 <hr>
 <hr>
 
@@ -130,7 +137,10 @@ We can also transpose the matrix of returns to create a new "horizontal" matrix.
 <br>
 <br>
 <br>
-
+1.dim(transposedData)
+2.portfolio = apply(transposedData,2,mean)
+  names(portfolio) <- rownames(StockReturns)
+  pnl_plot(portfolio)
 <hr>
 <hr>
 
@@ -148,7 +158,13 @@ This is an important step and will get you to think about the overall process on
 <br>
 <br>
 <br>
-
+1. startDate = "2001-01-01"
+2. website_used = "yahoo"
+   mytickers = c("SPY", "AAPL","GOOG","MSFT")
+   startDate = "2005-01-01"
+   portfolio = apply(StockReturns,1,mean)
+   names(portfolio) <- rownames(StockReturns)
+   pnl_plot(portfolio)
 <hr>
 <hr>
 
@@ -182,7 +198,7 @@ myData + StockReturns[1:40,])
 <br>
 <br>
 <br>
-
+1. R will return number of rows.
 <hr>
 <hr>
 
