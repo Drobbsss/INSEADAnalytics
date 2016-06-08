@@ -154,20 +154,20 @@ print(m1,'chart')
 #### Questions:
 
 1. How many principal components ("factors") do we need to explain at least 50% of the variance in this data?
-+ 6
+* 6
 2. What are the highest weights (in absolute value) of the first principal component portfolio above on the `r ncol(futures_data)` futures? 
-+ 0.93
+* 0.93
 3. Can we interpret the first 10 components? How would you call these factors?
-+ Component 1: Bonds
-+ Component 2: Currencies
-+ Component 3: Large cap EU Indices
-+ Component 4: Small cap North American Inidices
-+ Component 5: European Fixed Income Futures
-+ Component 6: Oil
-+ Component 7: Metals
-+ Component 8: Grains / Oilseeds
-+ Component 9: Precious Metals
-+ Component 10: Asian Indices
+* Component 1: Bonds
+* Component 2: Currencies
+* Component 3: Large cap EU Indices
+* Component 4: Small cap North American Inidices
+* Component 5: European Fixed Income Futures
+* Component 6: Oil
+* Component 7: Metals
+* Component 8: Grains / Oilseeds
+* Component 9: Precious Metals
+* Component 10: Asian Indices
 4. Can you now generate the principal components and scree plot using only: a) the pre-crisis bull market years (e.g. only using the data between November 1, 2002, and October 1, 2007)?  b) the financial crisis years (e.g. only using the data between October 1, 2007 and  March 1, 2009), (Hint: you can select subsets of the data using for example the command `crisis_data = futures_data[as.Date(rownames(futures_data)) > "2007-10-01" & as.Date(rownames(futures_data)) < "2009-03-01", ])
 
 ##Pre-crisis years
@@ -234,6 +234,9 @@ print(Line, 'chart')
 
 
 5. Based on your analysis in question 3, please discuss any differences you observe about the futures returns during  bull and bear markets.  What implications may these results have? What do the results imply about how assets are correlated during bear years compared to bull years? 
+
++ During bear years assets are more corellated than in bull years (i.e. less principal components explain 50% of the variance).
+
 6. (Extra - optional) Can you create an interactive (shiny based) tool so that we can study how the "**risk factors**" change ove time? (Hint: see [Exercise set 1](https://github.com/InseadDataAnalytics/INSEADAnalytics/blob/master/Exercises/Exerciseset1/ExerciseSet1.Rmd) and online resources on [Shiny](http://rmarkdown.rstudio.com/authoring_shiny.html) such as these [Shiny lessons](http://shiny.rstudio.com/tutorial/lesson1/). Note however that you may need to pay attention to various details e.g. about how to include Google Charts in Shiny tools - so keep this extra exercise for later!).
 
 <br>
