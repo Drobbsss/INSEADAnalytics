@@ -74,6 +74,8 @@ print(m1,'chart')
 
 ##### Answers:
 <br>
+High correlations of more than 0.4 are for example between questions:
+* 3 and 9/13/26/14/7/28 - make sense - people who care about brand tend to see the boat as a status symbol, buy the latest & greatest and are passionate about boats
 <br>
 <br>
 <br>
@@ -142,8 +144,11 @@ print(Line, 'chart')
 
 **Your Answers here:**
 <br>
+1. They results of Principal Component Analysis. They show principal components - linear combinations of the original questions - and to what extent these components capture variability in the data.
 <br>
+2. It is due to multicollinearity and the fact that some questions are highly correlated with greater number of questions than others.
 <br>
+3. Steeper plot to reduce the number of components as much as possible.
 <br>
 
 #### Visualization and Interpretation
@@ -215,10 +220,23 @@ print(m1,'chart')
 
 **Your Answers here:**
 <br>
+1)
+* Component 1 makes sense - one would expect that people who see boat as a status symbol will also buy the latest and greatest and will be both enthusiastic and knowledgable about boats.
+* Component 2 makes sense - all questions are related to positive experience (adventure/socializing)
+* Component 3 makes sense - reputable brand, paying premium and being serious about technology go hand in hand
+* Component 4 makes sense - someone who does maintenance on their own can be expected to be knowledgable about boats
+* Component 5 makes sense - cost conscious people will probably care about functionality and not style 
 <br>
+2)
+* a) 5 as suggested by scree plot
+* b) 4 as 1 and 4 overlap
+* c) 4
 <br>
+3)
+* see above
 <br>
-
+4) 
+* That it is a combination of applying mathematics and common sense.
 <hr>
 <hr>
 
